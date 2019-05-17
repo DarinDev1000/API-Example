@@ -1,0 +1,21 @@
+<h3>Search Thingiverse Items</h3>
+
+<!-- The Search Form -->
+<form method="get">
+  <input [(ngModel)]="searchName" type="text" name="searchName">
+  <button type="submit" name="submit" (click)="runSearch()">Search</button>
+  <p>{{ searchName }}</p>
+</form>
+
+<!-- Display the results of search -->
+<div>
+  <h3>Search Items</h3>
+  <div *ngFor='let item of responseItems'>
+    <div class="card">
+      <img src="{{ item.thumbnail }}" alt="thumbnail">
+      <h4> {{ item.name }} </h4>
+      <p>ID: {{ item.id }}</p>
+      <a href="{{ item.public_url }}">{{ item.public_url }}</a>
+    </div>
+  </div>
+</div>
