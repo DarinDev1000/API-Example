@@ -8,8 +8,8 @@ import Axios from 'axios';
 })
 export class SearchComponent implements OnInit {
   // Default Variables
-  searchName = 'cat';
   baseUrl = 'https://api.thingiverse.com/search/';
+  searchName = 'cat';
   urlAccessToken = '?access_token=a34aca11d88f36b8bdd1793cfeafd2b0';
   responseItems = [];
 
