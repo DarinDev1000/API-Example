@@ -25,6 +25,6 @@ export class SearchComponent implements OnInit {
     const url = `${this.baseUrl}${this.searchName}${this.urlAccessToken}`;
     const response = await Axios.get(url);
     console.log(response.data);
-    this.responseItems = response.data;
+    this.responseItems = response.data.hits;
   }
 }
