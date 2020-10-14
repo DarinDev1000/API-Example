@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+[![Run on Repl.it](https://repl.it/badge/github/DarinDev1000/API-Example)](https://repl.it/github/DarinDev1000/API-Example)
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
